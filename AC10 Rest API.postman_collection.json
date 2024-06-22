@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f4da6097-0550-487d-b38b-a41868d2529a",
+		"name": "AC10 Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33475486"
+	},
+	"item": [
+		{
+			"name": "Get all cloths",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/cloths",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"cloths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one cloth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/cloths/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"cloths",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add cloth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"manufacturer\": \"Castro\",\n    \"price\": \"80.00\",\n    \"type\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/cloths/new",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"cloths",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit cloth",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"manufacturer\": \"Castro\",\n    \"price\": \"80.00\",\n    \"type\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/cloths/edit/11",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"cloths",
+						"edit",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cloth",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/cloths/delete/11",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"cloths",
+						"delete",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

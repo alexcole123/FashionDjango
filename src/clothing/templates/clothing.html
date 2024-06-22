@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+AC10 | Clothes
+{% endblock title %}
+
+{% block content %}
+
+<h3>All Clothes:</h3>
+
+<table class="table table-bordered table-hover table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Manufacturer</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in clothing %}
+        <tr>
+            <td>{{ c.manufacturer }}</td>
+            <td>{{ c.price }}</td>
+            <td>{{ c.type.name }}</td>
+            <td>
+                <a href="{% url 'details' c.id %}">📖</a>
+                <span> | </span>
+                <a href="{% url 'edit' c.id %}">✍🏻</a>
+                <span> | </span>
+                <a onclick="confirmDelete(event)" href="{% url 'delete' c.id %}">🗑</a>            
+            </td>
+        </tr>
+        
+        {% endfor %}
+    </tbody>
+
+</table>
+
+{% endblock content %}

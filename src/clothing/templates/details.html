@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+AC10 | Details
+{% endblock title %}
+
+{% block content %}
+
+<h3 class="spacing">Details:</h3>
+
+<div class="card w-25 mx-auto">
+    <h4>Manufacturer: {{clothing.manufacturer}}</h4>
+    <h4>Price: {{clothing.price}}</h4>
+    <h4>Type: {{clothing.type.name}}</h4>
+</div>
+
+{% endblock content %}

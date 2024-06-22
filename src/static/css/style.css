@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(lightgrey 10%, skyblue, lightblue);
+
+}
+
+.navbar{
+    background-image: linear-gradient(lightblue 10%, skyblue, lightgrey);
+
+}
+
+.layout {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    /* Removed border for the layout container */
+}
+
+.layout, nav, main {
+    border: 1px solid;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.active {
+    font-weight: bold !important;
+    color: green !important;
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+
+.card {
+    background-image: linear-gradient(lightgrey 10%, skyblue, lightblue);
+}
+
+.spacing{
+    margin-top: 50px;
+}
+
+.fancy-form {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.fancy-form input, .fancy-form select {
+    margin-bottom: 20px;
+}
+
+ul.errorlist{
+    color: red;
+    font-size: larger;
+    position: absolute;
+    font-weight: bold;
+    transform: translate(300px);
+}
+
+.auth{
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.messages{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.messages > .success{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+.messages > .error{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
