@@ -1,4 +1,4 @@
-env
+.env
 /static/
 __pycache__/
 .coverage
