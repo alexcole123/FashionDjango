@@ -1,7 +1,6 @@
-.env
+env
 /static/
 __pycache__/
-requirements.txt
 .coverage
 clothes.sqlite3  # Or your specific test database file
 .DS_Store
