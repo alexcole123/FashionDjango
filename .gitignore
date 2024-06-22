@@ -4,3 +4,4 @@ __pycache__/
 .coverage
 clothes.sqlite3  # Or your specific test database file
 .DS_Store
+.venv
